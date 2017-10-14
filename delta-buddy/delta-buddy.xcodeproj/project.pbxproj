@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCADF1598124D16B39435020 /* Pods_delta_buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0EC5B9EF3BD6023B38F22A /* Pods_delta_buddy.framework */; };
 		C202AD091F9297A300EA3F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202AD081F9297A300EA3F71 /* AppDelegate.swift */; };
 		C202AD0B1F9297A300EA3F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202AD0A1F9297A300EA3F71 /* ViewController.swift */; };
 		C202AD0E1F9297A300EA3F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C202AD0C1F9297A300EA3F71 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420AC256A09F900C7AEC8482 /* Pods-delta-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-delta-buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-delta-buddy/Pods-delta-buddy.release.xcconfig"; sourceTree = "<group>"; };
+		57EAB9832665506B0A14253C /* Pods-delta-buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-delta-buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-delta-buddy/Pods-delta-buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		C202AD051F9297A300EA3F71 /* delta-buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "delta-buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C202AD081F9297A300EA3F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C202AD0A1F9297A300EA3F71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C202AD0F1F9297A300EA3F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C202AD121F9297A300EA3F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C202AD141F9297A300EA3F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0EC5B9EF3BD6023B38F22A /* Pods_delta_buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_delta_buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCADF1598124D16B39435020 /* Pods_delta_buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				C202AD071F9297A300EA3F71 /* delta-buddy */,
 				C202AD061F9297A300EA3F71 /* Products */,
+				E888D851BFCA8E03A29D1233 /* Pods */,
+				D735B36424F4FB670D808448 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "delta-buddy";
 			sourceTree = "<group>";
 		};
+		D735B36424F4FB670D808448 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC0EC5B9EF3BD6023B38F22A /* Pods_delta_buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E888D851BFCA8E03A29D1233 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57EAB9832665506B0A14253C /* Pods-delta-buddy.debug.xcconfig */,
+				420AC256A09F900C7AEC8482 /* Pods-delta-buddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C202AD171F9297A300EA3F71 /* Build configuration list for PBXNativeTarget "delta-buddy" */;
 			buildPhases = (
+				B3D690E94E32F418F361B855 /* [CP] Check Pods Manifest.lock */,
 				C202AD011F9297A300EA3F71 /* Sources */,
 				C202AD021F9297A300EA3F71 /* Frameworks */,
 				C202AD031F9297A300EA3F71 /* Resources */,
+				E8ECF6CD45D18000DD47B92E /* [CP] Embed Pods Frameworks */,
+				712A9A503E2A518D4C660930 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		712A9A503E2A518D4C660930 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-delta-buddy/Pods-delta-buddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D690E94E32F418F361B855 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-delta-buddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8ECF6CD45D18000DD47B92E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-delta-buddy/Pods-delta-buddy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-delta-buddy/Pods-delta-buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C202AD011F9297A300EA3F71 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		C202AD181F9297A300EA3F71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EAB9832665506B0A14253C /* Pods-delta-buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		C202AD191F9297A300EA3F71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420AC256A09F900C7AEC8482 /* Pods-delta-buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
